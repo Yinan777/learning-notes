@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>注册信息</title>
+</head>
+<body>
+    <h1>注册信息</h1>
+    <form action="">
+        <h2>个人信息</h2>
+        <label>姓名：</label>
+        <input type="text" name="name" placeholder="请输入真实姓名"><br><br>
+        <label>密码：</label>
+        <input type="password" name="password" placeholder="请输入密码"><br><br>
+        <label>确认密码：</label>
+        <input type="password" name="confirm_password" placeholder="请再次输入密码"><br><br>
+        <label>性别：</label>
+        <label><input type="radio" name="gender">男</label>
+        <label><input type="radio" name="gender" checked>女</label><br><br>
+        <label>居住城市：</label>
+        <select name="city">
+            <option value="beijing" selected>北京</option>
+            <option value="shanghai">上海</option>
+            <option value="guangzhou">广州</option>
+            <option value="shenzhen">深圳</option>
+        </select>
+        <h2>教育经历</h2>
+        <label>学历：</label>
+        <select name="education">
+            <option value="highschool">高中</option>
+            <option value="bachelor" selected>本科</option>
+            <option value="master">硕士</option>
+            <option value="phd">博士</option>
+        </select>
+        <label>学校名称：</label>
+        <input type="text" name="school" placeholder="请输入学校名称"><br><br>
+        <label>所学专业：</label>
+        <input type="text" name="major" placeholder="请输入所学专业"><br><br>
+        <label>在校时间：</label>
+        <select name="start_year">
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017" selected>2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+        </select>
+        --
+        <select name="end_year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021" selected>2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select><br><br>
+        <h2>工作经历</h2>
+        <label>公司名称：</label>
+        <input type="text" name="company" placeholder="请输入公司名称"><br><br>
+        <label>工作描述：</label><br>
+        <textarea name="job_description" rows="4" cols="50" placeholder="请输入工作描述"></textarea><br><br>
+        <input type="checkbox" name="agree" checked>我已阅读并同意以下协议：
+        <ul>
+            <li><a href="#">《用户服务协议》</a></li>
+            <li><a href="#">《隐私政策》</a></li>
+        </ul>
+        <button type="submit">免费注册</button>
+        <button type="reset">重新填写</button>
+    </form>
+</body>
+</html>
